@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+}
+
+/* HERO SECTION */
+.hero {
+    min-height: 100vh;
+    background: 
+        linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+        url("images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* TOP BAR */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* NAVIGATION */
+.nav a {
+    margin: 0 14px;
+    text-decoration: none;
+    color: white;
+    opacity: 0.85;
+}
+
+.nav a.active {
+    color: orange;
+    opacity: 1;
+}
+
+/* ACTIONS */
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.signup {
+    color: white;
+    text-decoration: none;
+}
+
+.login {
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+/* HERO TEXT */
+.hero-content {
+    text-align: center;
+    margin-top: 160px;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
