@@ -131,3 +131,73 @@ body {
     background: green;
     border-radius: 50%;
 }
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.destinations {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.destinations h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* grid */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* картка */
+.card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* картинка */
+.card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+/* затемнення */
+.card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+}
+
+/* текст поверх */
+.card-text {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    z-index: 2;
+}
+
+.card-text h3 {
+    font-size: 18px;
+}
+
+.card-text p {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+/* hover ефект */
+.card:hover img {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
